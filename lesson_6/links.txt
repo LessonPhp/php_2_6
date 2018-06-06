@@ -1,0 +1,5 @@
+﻿http://profitphp2.local/lesson_6/home_work/?ctrl=Index&action=Index
+
+http://profitphp2.local/lesson_6/home_work/?ctrl=Index&action=Article&id=1
+
+
