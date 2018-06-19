@@ -11,8 +11,7 @@ trait TraitV
      * @param $name
      * @param $value
      */
-    public function __set($name, $value)
-    {
+    public function __set($name, $value) {
 
         $this->data[$name] = $value;
     }
@@ -21,9 +20,8 @@ trait TraitV
      * @param $name
      * @return null
      */
-    public function __get($name)
-    {
-        if (isset($this->data[$name])) {
+    public function __get($name) {
+        if(isset($this->data[$name])) {
             return $this->data[$name];
         }
         return null;

@@ -20,11 +20,11 @@ class Article extends Model
 
     public function __get($name)
     {
-        if ('author' === $name) {
-            return Author::findById($this->author_id);
-        } else {
-            return null;
-        }
+        if('author' === $name) {
+                return Author::findById($this->author_id);
+            } else {
+                return null;
+            }
     }
 
     /**

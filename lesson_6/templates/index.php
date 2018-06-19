@@ -8,7 +8,7 @@
     <title>Главная страница</title>
 </head>
 <body>
-<a href="/lesson_6/home_work/?ctrl=Admin&action=Admin"><h3 style="text-align: center;">Админ-панель</h3></a>
+<a href="/lesson_6/home_work1/?ctrl=Admin&action=Admin"><h3 style="text-align: center;">Админ-панель</h3></a>
 <?php
 
 foreach ($this->articles as $article) : ?>
@@ -23,10 +23,11 @@ foreach ($this->articles as $article) : ?>
         <?php
     }
     ?>
-    <a href="/lesson_6/home_work/?ctrl=Index&action=Article&id=<?php echo $article->id; ?>">читать далее</a>
+    <a href="/lesson_6/home_work1/?ctrl=Index&action=Article&id=<?php echo $article->id; ?>">читать далее</a>
     <?php
 endforeach;
 ?>
 <h3 style="text-align: center;">Значения счетчика:</h3>
+<h4 style="text-align: center;"><?php echo SebastianBergmann\Timer\Timer::resourceUsage(); ?></h4>
 </body>
 </html>

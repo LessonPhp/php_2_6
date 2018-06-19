@@ -18,7 +18,8 @@
     <?php
 }
 ?>
-<a href="/lesson_6/home_work/?ctrl=Index&action=Index">Назад на главную</a>
-<h3 style="text-align: center;">Значения счетчика:</h3>
+<a href="/lesson_6/home_work1/?ctrl=Index&action=Index">Назад на главную</a>
+<h3 style="text-align: center;">Значение счетчика: </h3>
+<h4 style="text-align: center;"><?php echo SebastianBergmann\Timer\Timer::resourceUsage(); ?></h4>
 </body>
 </html>

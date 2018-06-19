@@ -1,15 +1,14 @@
 <?php
-require __DIR__ . '/../autoload.php';
+require __DIR__. '/../autoload.php';
 
 
 use App\Db;
-
 $db = new Db();
 
 // INSERT
 
 $data = $db->execute('INSERT INTO news (title, content) VALUES (:title, :content)',
-    [':title' => 'Новость 10', ':content' => 'The standard chunk of Lorem Ipsum used since the 1500s
+                        [':title' => 'Новость 10', ':content' => 'The standard chunk of Lorem Ipsum used since the 1500s
                                                                  is reproduced below for those interested. Sections
                                                                  1.10.32 and 1.10.33 from "de Finibus Bonorum et
                                                                  Malorum" by Cicero are also reproduced in their exact

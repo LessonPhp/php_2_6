@@ -21,11 +21,6 @@ try {
 } catch (Error404Exception $ex) {
     $ctrl = new \App\Controllers\Error();
     $ctrl->action('NotFound404');
-} catch (\App\Exceptions\MultiException $errors) {
-    foreach ($errors->all() as $error) {
-        echo $error->getMessage();
-        echo '<br>';
-    }
 } finally {
     if (isset($ex)) {
         $getLog = Logger::getLog($ex);

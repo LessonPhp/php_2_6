@@ -12,11 +12,11 @@ abstract class Controller
         $this->view = new View();
     }
 
-    public function access() : bool
+    public function access(): bool
     {
         // заглушка
 
-        if(isset($_GET['ctrl']) && isset($_GET['action'])) {
+        if (isset($_GET['ctrl']) && isset($_GET['action'])) {
             return true;
         } else {
             return false;
@@ -26,7 +26,7 @@ abstract class Controller
     public function action($action)
     {
         $method = 'action' . $action;
-        if($this->access()) {
+        if ($this->access()) {
             return $this->$method();
         } else {
             die('Доступ закрыт');

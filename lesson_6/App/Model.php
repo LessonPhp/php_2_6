@@ -39,20 +39,17 @@ abstract class Model
         return $result ? $result[0] : null;
     }
 
+    // задание 4
+
     /**
      * @param array $data
      * @throws MultiException
      */
-
     public function fill(array $data)
     {
         $errors = new MultiException();
         foreach ($data as $key => $value) {
-            try {
-                $this->$key = $value;
-            } catch (\Exception $e) {
-                $errors->add($e);
-            }
+            $this->$key = $value;
         }
         if (!$errors->empty()) {
             throw $errors;
