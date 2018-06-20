@@ -3,7 +3,6 @@
 use App\Exceptions\DbException;
 use App\Exceptions\Error404Exception;
 use App\Logger;
-use App\View;
 
 require __DIR__ . '/autoload.php';
 

@@ -39,7 +39,6 @@ abstract class Model
         return $result ? $result[0] : null;
     }
 
-    // задание 4
 
     /**
      * @param array $data
